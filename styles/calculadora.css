@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Rubik:ital,wght@0,500;1,400&family=Spartan:wght@700&display=swap');
+
+body{
+  height: 100%;  
+  margin:0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#todo{
+    width: 100%;
+    height: 100%;  
+}
+
+#calculadora{
+margin-bottom: 20em;
+}
+.calc{
+    margin-left: 6%;
+    margin-top: 2em;
+    font-weight: bold;
+    }
+
+.form-label{
+    letter-spacing: 5px;
+    margin-left: 3em;
+}   
+
+#rango{
+    width: 50px;
+    margin-bottom: 1em;
+    margin-left: 7em;
+    border-radius: 15px;
+    padding-top: 3px;
+}
+  #range{
+   background-color: transparent;
+   -webkit-appearance: none;
+   width: 50px;
+   display: inline-block;    
+}
+span{
+    display: inline-block;
+    font-weight: bold;
+}
+    
+#pantalla{
+    height: 4em;
+    margin-bottom: 15px;
+    width: 80%;
+    margin-left: 7% !important;
+    border-radius: 10px;
+    
+ }
+
+ h1{
+    text-align: right;
+    margin-right: 1em;   
+}
+
+#numero{
+
+    width: 80%;
+    margin-left: 2em !important;
+    border-radius: 5%;
+    font-family: 'Spartan', sans-serif;
+    padding: 20px, 200px, 20px, 200px;
+    
+    
+}
+
+#siete, #ocho, #nueve, #del, #seis, #cinco, #cuatro, #plus, #tres, #dos, #uno, #mas, #menos, #dividir, #multiplicar, #punto, #cero{
+    width: 70px;
+    height: 40px;
+    font-size: 25px;
+    margin: 7px;
+    border-radius: 10px;
+    
+    
+}
+
+#siete, #cuatro, #uno, #punto, #reset{
+    margin-left: 1em;
+}
+#reset{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#reset, #igual{
+    width: 160px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    
+.todo{
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+}
+
+.range[type=range]::-webkit-slider-thumb{
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    background:  hsl(176, 100%, 44%);
+    border-radius: 30px;
+    -webkit-appearance: none;
+}
+
+.rango, .numero, .pantalla {
+background-color: hsl(268, 71%, 12%);
+
+}
+.pantalla {
+    color: hsl(52, 100%, 62%);
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.number{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 3px hsl(285, 91%, 52%);
+    border: transparent;
+    color: hsl(52, 100%, 62%);
+}
+
+.delete{
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 3px hsl(290, 70%, 36%);
+    color:white;
+    border: transparent; 
+}
+
+.igual{
+    background-color:  hsl(176, 100%, 44%);
+    box-shadow: 0px 3px hsl(177, 92%, 70%);
+    color:white;
+    border: transparent;
+}
+
+}
+  
+ @media (prefers-color-scheme: light) {
+    
+.todo{
+    background-color:  hsl(0, 0%, 90%);
+    color: black;
+}
+
+.range[type=range]::-webkit-slider-thumb{
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    background: hsl(25, 98%, 40%);
+    border-radius: 20px;
+    -webkit-appearance: none;
+}
+
+.pantalla{
+background-color: hsl(0, 0%, 93%);
+color: black;
+text-align: right;
+padding-right: 20px;
+padding-top: 38px;
+font-size: 28px;
+font-weight: bold;
+}
+.rango, .numero{
+background-color: hsl(0, 5%, 81%);
+}
+
+.number, .operador{
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 3px hsl(35, 11%, 61%);
+    border: transparent;
+}
+
+.delete{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 3px hsl(185, 58%, 25%);
+    color:white;
+    border: transparent;
+}
+
+.igual{
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+    color:white;
+    border: transparent;
+}
+
+}
+  
+/* tema */
+.fondo1{
+    background-color: hsl(222, 26%, 31%);
+    color: white;
+}
+
+
+
+.rango1[type=range]::-webkit-slider-thumb{
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    background: hsl(6, 63%, 50%);
+    border-radius: 20px;
+    -webkit-appearance: none;
+}
+
+.pantalla1, .fondoBot1, .rango1Div{
+    background-color: hsl(224, 36%, 15%);
+    
+}
+
+.pantalla1, .pantalla2, .pantalla3{
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 38px;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+    
+
+.botones1{
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 3px hsl(28, 16%, 65%);
+    border: transparent;
+}
+
+.botonBorrar{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
+    color:white;
+    border: transparent;
+}
+
+.iqual{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+    color:white;
+    border: transparent;
+}
+
+/* tema 2*/
+
+
+.fondo2{
+    background-color:  hsl(0, 0%, 90%);
+    color: black;
+}
+
+.rango2[type=range]::-webkit-slider-thumb{
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    background: hsl(25, 98%, 40%);
+    border-radius: 20px;
+    -webkit-appearance: none;
+}
+
+.pantalla2{
+background-color: hsl(0, 0%, 93%);
+color: black;
+}
+.rango2Div, .fondoBot2{
+background-color: hsl(0, 5%, 81%);
+}
+
+.botones2{
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 3px hsl(35, 11%, 61%);
+    border: transparent;
+}
+
+.botonBorrar2{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 3px hsl(185, 58%, 25%);
+    color:white;
+    border: transparent;
+}
+
+.iqual2{
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+    color:white;
+    border: transparent;
+}
+
+/* tema 3*/
+
+
+.fondo3{
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+}
+
+.rango3[type=range]::-webkit-slider-thumb{
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    background:  hsl(176, 100%, 44%);
+    border-radius: 30px;
+    -webkit-appearance: none;
+}
+
+
+.rango3Div, .fondoBot3, .pantalla3 {
+background-color: hsl(268, 71%, 12%);
+color: hsl(52, 100%, 62%);
+}
+
+
+.botones3{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 3px hsl(285, 91%, 52%);
+    border: transparent;
+    color: hsl(52, 100%, 62%);
+}
+
+.botonBorrar3{
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 3px hsl(290, 70%, 36%);
+    color:white;
+    border: transparent;
+}
+
+.iqual3{
+    background-color:  hsl(176, 100%, 44%);
+    box-shadow: 0px 3px hsl(177, 92%, 70%);
+    color:white;
+    border: transparent;
+}
+
+@media screen and (max-width:720px) {
+#section{
+    width: 100% !important;
+    }
+  
+  #calculadora{
+  width: 100% !important;
+  }
+
+  .container{
+      width: 100%;
+  }
+  
+  .form-label{
+      letter-spacing: 2px;
+      display: inline-block;
+  }   
+  
+  #rango{
+      width: 50px;
+      margin-bottom:1em;
+      margin-left: 3em;
+      border-radius: 15px;
+      padding-top: 3px;
+      display: inline-block;
+  }
+    #range{
+     background-color: transparent;
+     -webkit-appearance: none;
+     width: 50px;
+     display: inline-block;    
+  }
+  span{
+      display: inline-block;
+      font-weight: bold;
+      margin: 2px;
+      font-size: 15px;
+      margin-top: 59px;
+  }
+      
+  #pantalla{
+      height: 4em;
+      margin-bottom: 1em;
+      width: 100%;
+      border-radius: 10px;
+      
+   }
+  
+   h1{
+      text-align: right;
+      margin-right: 1em;   
+  }
+  
+  #numero{
+  
+      width: 100%;
+      margin-left: 1em !important;
+      border-radius: 5%;
+      font-family: 'Spartan', sans-serif;
+      padding: 20px, 200px, 20px, 200px;
+      
+      
+  }
+  
+  #siete, #ocho, #nueve, #del, #seis, #cinco, #cuatro, #plus, #tres, #dos, #uno, #mas, #menos, #dividir, #multiplicar, #punto, #cero{
+      width: 50px;
+      height: 2em;
+      font-size: 20px;
+      margin: 0;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      
+      
+  }
+  
+  #reset, #igual{
+      width: 95px;
+      height: 40px;
+      margin-top: 60px;
+      border-radius: 10px;
+     margin: 5px;
+    }
+    #reset{
+      margin-left: 1%;
+    }
+    
+#siete, #cuatro, #uno, #punto, #reset{
+    margin-left: 1%;
+}
+}
